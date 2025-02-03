@@ -25,8 +25,14 @@ func main() {
 	fmt.Println("The perimeter is:", result)
 	result = calculateArea(17, 48)
 	fmt.Println("The area is:", result)
-	resultCirc := calculateAreaCircle(6.9)
+
+	var rad float32
+	_, err := fmt.Scan(&rad)
+	if err != nil {
+		panic("Invalid Input")
+	}
+	resultCirc := calculateAreaCircle(rad)
 	fmt.Println("The area is:", resultCirc)
-	resultCirc = calculateCircum(12.7)
+	resultCirc = calculateCircum(rad)
 	fmt.Println("The circumference is:", resultCirc)
 }
