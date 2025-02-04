@@ -1,3 +1,5 @@
+// Write a function counter that returns another function.
+// The returned function should increment and return a count each time it is called.
 package main
 
 import "fmt"
